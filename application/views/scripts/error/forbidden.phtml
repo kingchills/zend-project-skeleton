@@ -1,0 +1,20 @@
+<?php $this->headTitle("Forbidden"); ?>
+<h1>You do not have permission to access this page</h1>
+
+<?php if ($this->showExceptions): ?>
+
+<h2><?php echo $this->exception->getMessage(); ?></h2>
+
+<h3>Exception information:</h3>
+<p>
+  <b>Message:</b> <?php echo $this->exception->getMessage() ?>
+</p>
+
+<h3>Stack trace:</h3>
+<pre><?php echo $this->exception->getTraceAsString() ?>
+</pre>
+
+<h3>Request Parameters:</h3>
+<pre><?php echo var_export($this->request->getParams(), true) ?>
+</pre>
+<?php endif ?>

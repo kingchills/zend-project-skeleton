@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<projectProfile type="sierraBravoStandard" version="1.10">
+  <projectDirectory>
+    <projectProfileFile filesystemName=".zfproject.xml"/>
+    <applicationDirectory classNamePrefix="Application_">
+      <apisDirectory enabled="false"/>
+      <configsDirectory>
+        <applicationConfigFile type="ini"/>
+      </configsDirectory>
+      <controllersDirectory>
+        <controllerFile controllerName="Index">
+          <actionMethod actionName="index"/>
+        </controllerFile>
+        <controllerFile controllerName="Error"/>
+      </controllersDirectory>
+      <formsDirectory enabled="false"/>
+      <layoutsDirectory>
+        <layoutScriptsDirectory>
+          <layoutScriptFile layoutName="layout"/>
+        </layoutScriptsDirectory>
+      </layoutsDirectory>
+      <modelsDirectory/>
+      <modulesDirectory enabled="false"/>
+      <viewsDirectory>
+        <viewScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Index">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Error">
+            <viewScriptFile forActionName="authentication-required"/>
+            <viewScriptFile forActionName="forbidden"/>
+            <viewScriptFile forActionName="internal-server-error"/>
+            <viewScriptFile forActionName="not-found"/>
+          </viewControllerScriptsDirectory>
+        </viewScriptsDirectory>
+        <viewHelpersDirectory/>
+        <viewFiltersDirectory enabled="false"/>
+      </viewsDirectory>
+      <bootstrapFile filesystemName="Bootstrap.php"/>
+    </applicationDirectory>
+    <dataDirectory>
+      <cacheDirectory enabled="false"/>
+      <searchIndexesDirectory enabled="false"/>
+      <localesDirectory enabled="false"/>
+      <logsDirectory/>
+      <sqlDirectory/>
+      <sessionsDirectory enabled="false"/>
+      <uploadsDirectory enabled="false"/>
+    </dataDirectory>
+    <docsDirectory>
+      <file filesystemName="README.txt"/>
+    </docsDirectory>
+    <libraryDirectory>
+      <zfStandardLibraryDirectory enabled="false"/>
+      <projectLibraryDirectory>
+        <directory>
+          <directory>
+            <directory/>
+          </directory>
+        </directory>
+        <directory>
+          <directory/>
+        </directory>
+      </projectLibraryDirectory>
+    </libraryDirectory>
+    <publicDirectory>
+      <publicStylesheetsDirectory>
+        <file filesystemName="global.css"/>
+      </publicStylesheetsDirectory>
+      <publicScriptsDirectory>
+        <file filesystemName="global.js"/>
+      </publicScriptsDirectory>
+      <publicImagesDirectory/>
+      <publicIndexFile filesystemName="index.php"/>
+      <htaccessFile filesystemName=".htaccess"/>
+      <htaccessDistFile filesystemName=".htaccess-dist"/>
+    </publicDirectory>
+    <projectProvidersDirectory enabled="false"/>
+    <temporaryDirectory enabled="false"/>
+    <testsDirectory>
+      <testPHPUnitConfigFile filesystemName="phpunit.xml"/>
+      <testApplicationDirectory>
+        <testApplicationBootstrapFile filesystemName="bootstrap.php"/>
+      </testApplicationDirectory>
+      <testLibraryDirectory>
+        <testLibraryBootstrapFile filesystemName="bootstrap.php"/>
+      </testLibraryDirectory>
+    </testsDirectory>
+  </projectDirectory>
+</projectProfile>
